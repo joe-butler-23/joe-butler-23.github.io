@@ -42,8 +42,10 @@ author:
   name   : "Joe Butler"
   avatar : "/assets/images/joeb_profile.png"
   links:
+    - label: "London, UK"
+      icon: "ffas fa-fw fa-map-marker-alt"
     - label: "Website"
-      icon: "fas fa-fw fa-link"
+      icon: "fas fa-fw fa-globe"
       url: "https://https://joe-butler-23.github.io/"
     - label: "LinkedIn"
       icon: "fab fa-linkedin-in"
