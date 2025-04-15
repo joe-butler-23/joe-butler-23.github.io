@@ -84,6 +84,7 @@ author:
   links:
     - label: "London, UK"
       icon: "fas fa-fw fa-map-marker-alt"
+      url: "#"
     - label: "Website"
       icon: "fas fa-fw fa-globe"
       url: "https://joe-butler-23.github.io/"
