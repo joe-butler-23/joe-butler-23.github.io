@@ -1,0 +1,70 @@
+---
+layout: single
+---
+
+{{ content }}
+
+{% if page.repository %}
+<div class="project-repository">
+  <h2>GitHub Repository</h2>
+  <p><a href="{{ page.repository }}" class="btn btn--primary btn--large" target="_blank"><i class="fab fa-github"></i> View on GitHub</a></p>
+</div>
+{% endif %}
+
+{% if page.skills %}
+<div class="project-skills">
+  <h2>Skills Demonstrated</h2>
+  <ul class="skill-list">
+    {% for skill in page.skills %}
+    <li class="skill-tag">{{ skill }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+{% if page.technologies %}
+<div class="project-technologies">
+  <h2>Technologies Used</h2>
+  <ul class="tech-list">
+    {% for tech in page.technologies %}
+    <li class="tech-item">{{ tech }}</li>
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
+
+<style>
+  .project-skills, .project-technologies, .project-repository {
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+  }
+  
+  .skill-list, .tech-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .skill-tag, .tech-item {
+    display: inline-block;
+    margin: 0.25em;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    font-size: 0.8em;
+  }
+  
+  .skill-tag {
+    background-color: #e6f3e6;
+    color: #2a7d2a;
+  }
+  
+  .tech-item {
+    background-color: #e6e6ff;
+    color: #3939ac;
+    font-family: monospace;
+  }
+</style>
