@@ -45,12 +45,7 @@ Initial exploration revealed:
 - Family history of overweight approximately doubles obesity rate in binary analysis
 - Transportation heavily skewed toward public transit with minimal active transport (<3% cycling/walking)
 
-<script src="{{ '/assets/js/correlation-heatmap.js' | relative_url }}"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    createCorrelationHeatmap('correlation-heatmap');
-  });
-</script>
+<div id="correlation-heatmap"></div>
 
 ## Unsupervised Learning
 
@@ -73,9 +68,6 @@ silhouette_scores = [silhouette_score(X_processed,
 
 The analysis identified four distinct clusters with unique obesity risk profiles:
 
-<div class="l-body-outset" id="cluster-visualization" class="placeholder">
-  D3.js visualization: PCA-based cluster visualization with obesity class distribution
-</div>
 
 | Cluster | Primary Obesity Class | Key Characteristics (top z-scores) |
 | ------- | --------------------- | ---------------------------------- |
@@ -118,10 +110,6 @@ The modeling results showed:
 - No anthropometrics: 75% accuracy (clusters emerge as top predictor)
 - Lifestyle factors only: 71% accuracy (macro-F1 = 0.69)
 
-<div class="l-page" id="decision-tree-viz" class="placeholder">
-  D3.js visualization: Interactive decision tree with expandable paths
-</div>
-
 Feature importance analysis identified the top five lifestyle predictors:
 1. Screen time (TUE): 15.8%
 2. Vegetable consumption (FCVC): 15.4%
@@ -130,10 +118,6 @@ Feature importance analysis identified the top five lifestyle predictors:
 5. Physical activity frequency (FAF): 10.0%
 
 The confusion matrix revealed strong classification performance for Obesity Type III (F1 = 0.96) but weaker discrimination for the Overweight categories.
-
-<div class="l-body" id="feature-importance" class="placeholder">
-  D3.js visualization: Feature importance bar chart with confidence intervals
-</div>
 
 ## Key Insights
 
@@ -148,10 +132,6 @@ The analysis yielded several actionable insights:
 4. **Active transport opportunity**: The heavy skew toward public transportation (with minimal cycling/walking) suggests potential for interventions promoting active transport
 
 5. **Age-specific patterns**: Distinct risk profiles emerged across age groups, with different behavioral factors dominating at different life stages
-
-<div class="l-body-outset" id="prediction-explorer" class="placeholder">
-  D3.js visualization: Interactive prediction tool with adjustable lifestyle factors
-</div>
 
 ## Technical Implementation
 
@@ -172,3 +152,10 @@ The implementation addresses several technical challenges:
 The complete code, including notebooks for each analysis phase, is available in the GitHub repository linked below.
 
 <d-footnote>Full code and interactive visualizations available at: [github.com/yourusername/obesity-analysis](https://github.com/joe-butler-23/obesity-in-latin-america)</d-footnote>
+
+<script src="{{ '/assets/js/correlation-heatmap.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    createCorrelationHeatmap('correlation-heatmap');
+  });
+</script>
