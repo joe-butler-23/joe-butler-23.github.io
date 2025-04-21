@@ -91,9 +91,9 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-",
-          title: '',
-          description: "",
+            },},{id: "projects-uncovering-patterns-in-obesity-risk-factors",
+          title: 'Uncovering Patterns in Obesity Risk Factors',
+          description: "Supervised &amp; unsupervised analysis of obesity risk in Latin America",
           section: "Projects",handler: () => {
               window.location.href = "/projects/obesity-in-latin-america/";
             },},{
