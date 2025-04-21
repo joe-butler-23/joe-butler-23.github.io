@@ -118,11 +118,11 @@ ninja.data = [{
           window.open("mailto:%6A%6F%65%62.%39%32@%68%6F%74%6D%61%69%6C.%63%6F.%75%6B", "_blank");
         },
       },{
-        id: 'social-joe-butler-23 github_username',
-        title: 'Joe-butler-23 github_username',
+        id: 'social-github',
+        title: 'GitHub',
         section: 'Socials',
         handler: () => {
-          window.open("", "_blank");
+          window.open("https://github.com/joe-butler-23", "_blank");
         },
       },{
         id: 'social-linkedin',
