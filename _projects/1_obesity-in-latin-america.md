@@ -109,53 +109,32 @@ silhouette_scores = [silhouette_score(X_processed,
 
 The analysis identified four distinct clusters with unique obesity risk profiles:
 
+```plotly
 {
   "data": [
     {
-      "x": [1.548, 0.530, ‑0.762, ‑1.262, …],
-      "y": [‑0.567, ‑0.846, ‑1.478,  0.292, …],
+      "x": [1.548, 0.530, -0.762, -1.262, …],
+      "y": [-0.567, -0.846, -1.478,  0.292, …],
       "mode": "markers",
       "type": "scatter",
-      "name": "Cluster 0",
+      "name": "Cluster 0",
       "marker": { "size": 6 },
-      "text": ["Normal_Weight","Normal_Weight", "Normal_Weight","Overweight_Level_I", …],
-      "hovertemplate": "Cluster: 0<br>Class: %{text}<br>PC1: %{x:.2f}<br>PC2: %{y:.2f}<extra></extra>"
+      "text": ["Normal_Weight","Normal_Weight", …],
+      "hovertemplate": "Cluster: 0<br>Class: %{text}<br>PC1: %{x:.2f}<br>PC2: %{y:.2f}<extra></extra>"
     },
-    {
-      "x": [ …PC1 points for cluster 1… ],
-      "y": [ …PC2 points for cluster 1… ],
-      "mode": "markers",
-      "type": "scatter",
-      "name": "Cluster 1",
-      "marker": { "size": 6 },
-      "text": [ …corresponding ObesityClass… ]
-    },
-    {
-      "x": [ …cluster 2… ],
-      "y": [ … ],
-      "mode": "markers",
-      "type": "scatter",
-      "name": "Cluster 2",
-      "marker": { "size": 6 }
-    },
-    {
-      "x": [ …cluster 3… ],
-      "y": [ … ],
-      "mode": "markers",
-      "type": "scatter",
-      "name": "Cluster 3",
-      "marker": { "size": 6 }
-    }
+    { /* cluster 1 spec */ },
+    { /* cluster 2 spec */ },
+    { /* cluster 3 spec */ }
   ],
   "layout": {
-    "title": "PCA + K‑Means Clusters",
+    "title": "PCA + K‑Means Clusters",
     "xaxis": { "title": "PC1" },
     "yaxis": { "title": "PC2" },
     "legend": { "title": { "text": "Cluster" } },
     "hovermode": "closest"
   }
 }
-
+```
 
 | Cluster | Primary Obesity Class | Key Characteristics (top z-scores) |
 | ------- | --------------------- | ---------------------------------- |
