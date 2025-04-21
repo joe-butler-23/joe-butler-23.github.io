@@ -4,7 +4,9 @@ title: Uncovering Patterns in Obesity Risk Factors
 description: supervised & unsupervised analysis of obesity risk in Latin America
 date: 2025-04-21
 category: Msc
-importance: 1
+importance: 4
+chart:
+  plotly: true
 authors:
   - name: Joe Butler
     url: "https://joe-butler-23.github.io"
