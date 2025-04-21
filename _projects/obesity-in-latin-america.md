@@ -24,8 +24,6 @@ toc:
     #   - name: Example Child Subsection 1
     #   - name: Example Child Subsection 2
   - name: Dataset Exploration
-      - name: Dataset characteristics
-      - name: Key initial findings
   - name: Unsupervised learning
   - name: Supervised learning 
   - name: Key insights & recommendations
