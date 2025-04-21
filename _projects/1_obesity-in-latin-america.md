@@ -33,7 +33,7 @@ toc:
   padding: 0.5rem 1rem;
   font-size: 1rem;
   font-weight: 600;
-  color: #fff;
+  color: #ffffff;
   background-color: #0074D9;
   border: none;
   border-radius: 4px;
