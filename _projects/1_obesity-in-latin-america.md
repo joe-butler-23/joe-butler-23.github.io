@@ -151,7 +151,7 @@ The implementation addresses several technical challenges:
 
 The complete code, including notebooks for each analysis phase, is available in the GitHub repository linked below.
 
-<d-footnote>Full code and interactive visualizations available at: [github.com/yourusername/obesity-analysis](https://github.com/joe-butler-23/obesity-in-latin-america)</d-footnote>
+<d-footnote>Full code and interactive visualizations available at: [github.com/joe-butler-23/obesity-in-latin-america](https://github.com/joe-butler-23/obesity-in-latin-america)</d-footnote>
 
 <script src="{{ '/assets/js/correlation-heatmap.js' | relative_url }}"></script>
 <script>
