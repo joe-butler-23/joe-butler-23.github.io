@@ -107,51 +107,6 @@ silhouette_scores = [silhouette_score(X_processed,
 
 The analysis identified four distinct clusters with unique obesity risk profiles:
 
-<div id="pca-plot" style="width:100%;height:600px;"></div>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  function groupBy(arr, keyFn) {
-    return arr.reduce((acc, x) => {
-      const k = keyFn(x);
-      (acc[k] = acc[k] || []).push(x);
-      return acc;
-    }, {});
-  }
-
-  fetch('{{ "/assets/data/pca_data.json" | relative_url }}')
-    .then(r => r.json())
-    .then(data => {
-      const clusters = groupBy(data, d => d.Cluster);
-      const traces = Object.entries(clusters).map(([cluster, pts]) => ({
-        x: pts.map(p => +p.PC1),
-        y: pts.map(p => +p.PC2),
-        text: pts.map(p => p.ObesityClass),
-        mode: 'markers',
-        type: 'scatter',
-        name: `Cluster ${cluster}`,
-        marker: { size: 6 },
-        hovertemplate:
-          'Cluster: %{name}<br>' +
-          'Class: %{text}<br>' +
-          'PC1: %{x:.2f}<br>' +
-          'PC2: %{y:.2f}<extra></extra>'
-      }));
-
-      const layout = {
-        title: 'PCA + K-Means Clusters',
-        xaxis: { title: 'Principal Component 1' },
-        yaxis: { title: 'Principal Component 2' },
-        legend: { title: { text: 'Cluster' } },
-        hovermode: 'closest',
-        margin: { t: 50, b: 50, l: 50, r: 50 }
-      };
-
-      Plotly.newPlot('pca-plot', traces, layout, { responsive: true });
-    })
-    .catch(console.error);
-});
-</script>
 
 | Cluster | Primary Obesity Class | Key Characteristics (top z-scores) |
 | ------- | --------------------- | ---------------------------------- |
