@@ -85,7 +85,7 @@ Initial exploration revealed:
 - Strong negative correlation between age and screen time (TUE) (ρ = -0.30)
 - Family history of overweight approximately doubles obesity rate in binary analysis
 - Transportation heavily skewed toward public transit with minimal active transport (<3% cycling/walking)
-- 
+
 ## Unsupervised Learning
 
 K-Means clustering with PCA dimensionality reduction was implemented to identify natural groupings in the multivariate data:
@@ -107,8 +107,8 @@ silhouette_scores = [silhouette_score(X_processed,
 
 The analysis identified four distinct clusters with unique obesity risk profiles:
 
-<div id="pca-plot" style="width:100%;height:600px;"></div> 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<div id="pca-plot" style="width:100%;height:600px;"></div>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   function groupBy(arr, keyFn) {
