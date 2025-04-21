@@ -46,11 +46,11 @@ ninja.data = [{
             },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
           title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-uncovering-patterns-in-obesity-risk-factors",
+          title: 'Uncovering Patterns in Obesity Risk Factors',
+          description: "Supervised &amp; unsupervised analysis of obesity risk in Latin America",
           section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
+              window.location.href = "/projects/1_obesity-in-latin-america/";
             },},{id: "projects-project-2",
           title: 'project 2',
           description: "a project with a background image and giscus comments",
@@ -91,11 +91,6 @@ ninja.data = [{
           description: "another project with an image 🎉",
           section: "Projects",handler: () => {
               window.location.href = "/projects/9_project/";
-            },},{id: "projects-uncovering-patterns-in-obesity-risk-factors",
-          title: 'Uncovering Patterns in Obesity Risk Factors',
-          description: "Supervised &amp; unsupervised analysis of obesity risk in Latin America",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/obesity-in-latin-america/";
             },},{
         id: 'social-email',
         title: 'email',
