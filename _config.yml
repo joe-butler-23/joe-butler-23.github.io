@@ -175,6 +175,7 @@ exclude:
   - _pages/news.md
   - _pages/publications.md
   - _pages/teaching.md
+  - _pages/about_einstein.md
   - bin/
   - CONTRIBUTING.md
   - CUSTOMIZE.md
