@@ -5,8 +5,8 @@ permalink: /
 subtitle: a collection of statistics projects
 
 profile:
-  align: right
-  image: prof_pic.png
+  align: left
+  image: joeb_profile.png
   image_circular: false # crops the image to make it circular
   more_info:
 
