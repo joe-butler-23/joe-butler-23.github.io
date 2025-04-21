@@ -7,7 +7,7 @@ subtitle: a collection of statistics projects
 profile:
   align: left
   image: joeb_profile.png
-  image_circular: false # crops the image to make it circular
+  image_circular: true # crops the image to make it circular
   more_info:
 
 selected_papers: false # includes a list of papers marked as "selected={true}"
@@ -24,7 +24,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-London, UK
+<i class="fas fa-map-marker-alt" style="color:inherit;"></i> London, UK
 
 I work in financial regulation and—as of September 2024—I am an MSc student in Applied Statistics at the University of Strathclyde. This website showcases a selection of statistics projects that I'm undertaking personally, professionally, or as part of my academic studies. My focus is on applying statistical modeling and machine learning algorithms to convert complex data into clear insights and actionable decisions. I work on Linux, using R and Python with tools like Neovim.
 
