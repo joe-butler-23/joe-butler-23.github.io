@@ -45,9 +45,12 @@ Initial exploration revealed:
 - Family history of overweight approximately doubles obesity rate in binary analysis
 - Transportation heavily skewed toward public transit with minimal active transport (<3% cycling/walking)
 
-<div class="l-page" id="distribution-plots" class="placeholder">
-  D3.js visualization: Distribution plots of age, weight, height with interactive filters
-</div>
+<script src="{{ '/assets/js/correlation-heatmap.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    createCorrelationHeatmap('correlation-heatmap');
+  });
+</script>
 
 ## Unsupervised Learning
 
