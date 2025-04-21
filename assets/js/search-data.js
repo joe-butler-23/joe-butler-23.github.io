@@ -48,7 +48,7 @@ ninja.data = [{
           description: "",
           section: "News",},{id: "projects-uncovering-patterns-in-obesity-risk-factors",
           title: 'Uncovering Patterns in Obesity Risk Factors',
-          description: "Supervised &amp; unsupervised analysis of obesity risk in Latin America",
+          description: "supervised &amp; unsupervised analysis of obesity risk in Latin America",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_obesity-in-latin-america/";
             },},{id: "projects-project-2",
