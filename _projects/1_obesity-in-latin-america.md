@@ -17,6 +17,49 @@ toc:
   - name: Technical implementation
 ---
 
+<style>
+/* Button container to space them out */
+.button-container {
+  margin-bottom: 1rem;
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Base button styles */
+.button-container .btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background-color: #0074D9;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.button-container .btn:hover {
+  background-color: #005fa3;
+}
+</style>
+
+<div class="button-container">
+  <!-- GitHub repo button -->
+  <a class="btn" href="https://github.com/joe-butler-23/obesity-in-latin-america"
+     target="_blank" rel="noopener">
+    Github repo
+  </a>
+
+  <!-- Download report button -->
+  <a class="btn" href="{{ '/assets/files/obesity-report.pdf' | relative_url }}"
+     download>
+    Download pdf of full report
+  </a>
+</div>
+
+
 ## Summary
 
 This project demonstrates an end-to-end machine learning workflow analyzing obesity risk factors in a dataset from the UCI Machine Learning Repository. The analysis reveals complex, non-linear relationships between lifestyle factors and obesity through both supervised and unsupervised techniques.
