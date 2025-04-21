@@ -24,5 +24,10 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-A collection of statistics projects. 
+London, UK
 
+I work in financial regulation and—as of September 2024—I am an MSc student in Applied Statistics at the University of Strathclyde. This website showcases a selection of statistics projects that I'm undertaking personally, professionally, or as part of my academic studies. My focus is on applying statistical modeling and machine learning algorithms to convert complex data into clear insights and actionable decisions. I work on Linux, using R and Python with tools like Neovim.
+
+In my previous studies, I focused my attention on financial plumbing. What mechanisms link different financial actors and sectors? What happens when these mechanisms break down? How can they serve to transmit or dampen shocks and crises? My current goal is to integrate this understanding of financial markets with advanced statistical techniques.
+
+Outside of these areas I am a strong advocate for open-source software, and committed to producing reproducible analyses. 
