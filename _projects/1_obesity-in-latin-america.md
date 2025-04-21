@@ -107,19 +107,53 @@ silhouette_scores = [silhouette_score(X_processed,
 
 The analysis identified four distinct clusters with unique obesity risk profiles:
 
-<div id="cluster-visualization" class="l-body-outset"></div>
+{
+  "data": [
+    {
+      "x": [1.548, 0.530, ‑0.762, ‑1.262, …],
+      "y": [‑0.567, ‑0.846, ‑1.478,  0.292, …],
+      "mode": "markers",
+      "type": "scatter",
+      "name": "Cluster 0",
+      "marker": { "size": 6 },
+      "text": ["Normal_Weight","Normal_Weight", "Normal_Weight","Overweight_Level_I", …],
+      "hovertemplate": "Cluster: 0<br>Class: %{text}<br>PC1: %{x:.2f}<br>PC2: %{y:.2f}<extra></extra>"
+    },
+    {
+      "x": [ …PC1 points for cluster 1… ],
+      "y": [ …PC2 points for cluster 1… ],
+      "mode": "markers",
+      "type": "scatter",
+      "name": "Cluster 1",
+      "marker": { "size": 6 },
+      "text": [ …corresponding ObesityClass… ]
+    },
+    {
+      "x": [ …cluster 2… ],
+      "y": [ … ],
+      "mode": "markers",
+      "type": "scatter",
+      "name": "Cluster 2",
+      "marker": { "size": 6 }
+    },
+    {
+      "x": [ …cluster 3… ],
+      "y": [ … ],
+      "mode": "markers",
+      "type": "scatter",
+      "name": "Cluster 3",
+      "marker": { "size": 6 }
+    }
+  ],
+  "layout": {
+    "title": "PCA + K‑Means Clusters",
+    "xaxis": { "title": "PC1" },
+    "yaxis": { "title": "PC2" },
+    "legend": { "title": { "text": "Cluster" } },
+    "hovermode": "closest"
+  }
+}
 
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="{{ '/assets/js/cluster-visualization.js' | relative_url }}"></script>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    fetch('{{ "/assets/data/pca_data.json" | relative_url }}')
-      .then(res => res.json())
-      .then(data => {
-        createClusterPlot(data, 'cluster-visualization');
-      });
-  });
-</script>
 
 | Cluster | Primary Obesity Class | Key Characteristics (top z-scores) |
 | ------- | --------------------- | ---------------------------------- |
