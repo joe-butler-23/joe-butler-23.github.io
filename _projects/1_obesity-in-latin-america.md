@@ -27,10 +27,6 @@ This project demonstrates an end-to-end machine learning workflow analyzing obes
 - **Supervised Learning**: Decision Tree (excluding height/weight) achieves 71% accuracy with macro-F1 ≈ 0.69
 - **Key Finding**: Screen time (15.8%) and vegetable consumption (15.4%) emerge as the strongest lifestyle predictors
 
-<div class="l-body-outset" id="correlation-heatmap" class="placeholder">
-  D3.js visualization: Correlation heatmap of key obesity predictors
-</div>
-
 ## Dataset Exploration
 
 The dataset contains 2,111 observations across 17 variables from Mexico, Peru, and Colombia, with approximately 77% synthetic data created via SMOTE. The target variable categorizes individuals into seven BMI-based groups from "Insufficient Weight" to "Obesity Type III."
@@ -68,6 +64,19 @@ silhouette_scores = [silhouette_score(X_processed,
 
 The analysis identified four distinct clusters with unique obesity risk profiles:
 
+<div id="cluster-visualization" class="l-body-outset"></div>
+
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="{{ '/assets/js/cluster-visualization.js' | relative_url }}"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    fetch('{{ "/assets/data/pca_data.json" | relative_url }}')
+      .then(res => res.json())
+      .then(data => {
+        createClusterPlot(data, 'cluster-visualization');
+      });
+  });
+</script>
 
 | Cluster | Primary Obesity Class | Key Characteristics (top z-scores) |
 | ------- | --------------------- | ---------------------------------- |
