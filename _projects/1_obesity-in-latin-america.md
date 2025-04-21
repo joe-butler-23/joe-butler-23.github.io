@@ -1,7 +1,7 @@
 ---
 layout: distill
 title: Uncovering Patterns in Obesity Risk Factors
-description: Supervised & unsupervised analysis of obesity risk in Latin America
+description: supervised & unsupervised analysis of obesity risk in Latin America
 date: 2025-04-21
 category: Msc
 importance: 1
@@ -9,7 +9,7 @@ authors:
   - name: Joe Butler
     url: "https://joe-butler-23.github.io"
 toc:
-  - name: TL;DR
+  - name: Summary
   - name: Dataset Exploration
   - name: Unsupervised learning
   - name: Supervised learning 
@@ -17,7 +17,7 @@ toc:
   - name: Technical implementation
 ---
 
-## TL;DR
+## Summary
 
 This project demonstrates an end-to-end machine learning workflow analyzing obesity risk factors in a dataset from the UCI Machine Learning Repository. The analysis reveals complex, non-linear relationships between lifestyle factors and obesity through both supervised and unsupervised techniques.
 
